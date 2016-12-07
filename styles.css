@@ -36,6 +36,7 @@ body{
 .adjuster{
     position: relative;
     display: flex;
+    margin-bottom: 64px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -49,7 +50,7 @@ body{
 }
 .button{
     position: absolute;
-    top: 40px;
+    top: 60px;
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -64,7 +65,7 @@ body{
     border-style: solid;
 }
 .button:active {
-    top: 41px;
+    top: 64px;
     border-style: none;
 }
 #decMain:active, #decBreak:active {
@@ -88,6 +89,9 @@ body{
     color: #1B1B1B;
     border-radius: 50%;
     background-color: #F0EAD6;
+}
+#timer span{
+    padding-bottom: 12px;
 }
 #decBreak, #decMain{
     left: 20px;
