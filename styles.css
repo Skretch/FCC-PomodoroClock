@@ -1,11 +1,15 @@
 body{
     background-color: #1B1B1B;
     margin, padding: 0px;
-    color: #FDF5E6;
+    color: #F0EAD6;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
+    cursor:default;
+    font-family: serif;
+    box-sizing: border-box;
+    user-select: none;
 }
 #content{
     display: flex;
@@ -30,11 +34,12 @@ body{
     }
 }
 .adjuster{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 300px;
+    width: 400px;
 }
 .adjuster h1{
     margin: 0px 50px;
@@ -43,14 +48,32 @@ body{
     width: 100%;
 }
 .button{
+    position: absolute;
+    top: 40px;
+    font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(55, 64, 73);
+    color: #F0EAD6;
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    border-width: 1px;
+    border-color: slategray;
+    border-style: solid;
 }
+.button:active {
+    top: 41px;
+    border-style: none;
+}
+#decMain:active, #decBreak:active {
+    left: 21px;
+}
+#incMain:active, #incBreak:active {
+    right: 21px;
+}
+
 #timer{
     display: flex;
     align-items: center;
@@ -61,8 +84,22 @@ body{
     margin: 0px 8%;
     width: 200px;
     height: 200px;
-    border: 10px solid chartreuse;
+    border: 10px solid forestgreen;
     color: #1B1B1B;
     border-radius: 50%;
     background-color: #F0EAD6;
+}
+#decBreak, #decMain{
+    left: 20px;
+    height: 40px;
+    padding-bottom: 10px;
+    width: 49px;
+    padding-left: 1px;
+}
+#incBreak, #incMain{
+    right: 20px;
+    height: 48px;
+    padding-bottom: 2px;
+    width: 49px;
+    padding-left: 1px;
 }
