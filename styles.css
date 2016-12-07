@@ -19,7 +19,7 @@ body{
     text-align: center;
 
 }
-@media (max-width: 1000px){
+@media (max-width: 1250px){
     #content{
         flex-direction: column;
     }
@@ -77,6 +77,7 @@ body{
 
 #timer{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
 
@@ -85,13 +86,25 @@ body{
     margin: 0px 8%;
     width: 200px;
     height: 200px;
-    border: 10px solid forestgreen;
+    /*border: 10px solid forestgreen;*/
     color: #1B1B1B;
     border-radius: 50%;
     background-color: #F0EAD6;
 }
 #timer span{
     padding-bottom: 12px;
+}
+#timer svg{
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 110px 110px;
+    top: -10px;
+    left: -10px;
+    height: 200%;
+    stroke: forestgreen;
+    stroke-width: 10px;
+    stroke-dasharray: 659;
+    stroke-dashoffset: 300;
 }
 #decBreak, #decMain{
     left: 20px;
