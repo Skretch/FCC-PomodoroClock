@@ -9,22 +9,25 @@
         <div id="content">
             <div id="breakTimer" class="adjuster">
                 <h2>Break Timer</h2>
-                <div id="decBreak" class="button">-</div>
-                <h1>10</h1>
-                <div id="incBreak" class="button">+</div>
+                <div id="decBreak" class="button btn">-</div>
+                <h1 id="breakTimerVal">10</h1>
+                <div id="incBreak" class="button btn">+</div>
             </div>
-            <div id="timer">
-                25<span>:</span>00
-                <svg xmlns="http://www.w3.org/2000/svg">
+            <div id="timer" class="btn">
+                <span id="timerVal">25<span>:</span>00</span>
+                <svg xmlns="http://www.w3.org/2000/svg" id="progressBar">
                     <circle fill="none" cx="110" cy="110" r="105"/>
                 </svg>
             </div>
             <div id="mainTimer" class="adjuster">
                 <h2>Main Timer</h2>
-                <div id="decMain" class="button">-</div>
-                <h1>25</h1>
-                <div id="incMain" class="button">+</div>
+                <div id="decMain" class="button btn">-</div>
+                <h1 id="mainTimerVal">25</h1>
+                <div id="incMain" class="button btn">+</div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.2/howler.core.min.js"></script>
+        <script type="text/javascript" src="main.js">
+        </script>
     </body>
 </html>

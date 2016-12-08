@@ -91,20 +91,30 @@ body{
     border-radius: 50%;
     background-color: #F0EAD6;
 }
-#timer span{
-    padding-bottom: 12px;
+#timerVal span{
+    position: relative;
+    bottom: 6px;
 }
+@keyframes start {
+    0%{
+        stroke-dashoffset: 0;
+    }
+}
+
 #timer svg{
     position: absolute;
     transform: rotate(-90deg);
     transform-origin: 110px 110px;
     top: -10px;
     left: -10px;
-    height: 200%;
+    height: 110%;
     stroke: forestgreen;
     stroke-width: 10px;
     stroke-dasharray: 659;
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 659;
+}
+.startTimer{
+    animation: start 1s ease-in forwards;
 }
 #decBreak, #decMain{
     left: 20px;
