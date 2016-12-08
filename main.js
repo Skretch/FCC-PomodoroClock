@@ -93,7 +93,6 @@ var timerObj = {
                         loop:false
                     });
                     sound.play();
-                    timerObj.startTimer(curMainTimerVal);
                 }
             }
         }else{
