@@ -60,7 +60,7 @@ var timerObj = {
                     clearInterval(runner);
                     timerRunning = false;
                     var sound = new Howl({
-                        src:'dropped.ogg',
+                        src:'MinionElo.mp3',
                         autoplay:true,
                         loop:false
                     });
@@ -88,7 +88,7 @@ var timerObj = {
                     window.clearInterval(runner);
                     timerRunning = false;
                     var sound = new Howl({
-                        src:'dropped.ogg',
+                        src:'MinionElo.mp3',
                         autoplay:true,
                         loop:false
                     });
